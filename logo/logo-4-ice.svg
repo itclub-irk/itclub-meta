@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>IT Club Irkutsk — ice badge</title>
+  <!-- palette: navy #013058, teal #3CABB4, ice-light #A9DCE3, white #FDFDFD -->
+  <defs>
+    <clipPath id="disc">
+      <circle cx="512" cy="512" r="472"/>
+    </clipPath>
+  </defs>
+
+  <!-- badge base -->
+  <circle cx="512" cy="512" r="500" fill="#013058"/>
+  <circle cx="512" cy="512" r="486" fill="none" stroke="#FDFDFD" stroke-width="26"/>
+
+  <g clip-path="url(#disc)">
+    <!-- sky -->
+    <rect x="20" y="20" width="984" height="600" fill="#013058"/>
+
+    <!-- mountains: solid white jagged band -->
+    <path d="M40,608 L40,522 L118,436 L186,506 L276,402 L338,474 L418,408 L498,490 L578,424 L658,492 L738,432 L828,500 L908,442 L982,524 L984,608 Z"
+          fill="#FDFDFD"/>
+
+    <!-- teal water lens -->
+    <path d="M40,608 Q200,640 340,622 T620,610 T900,632 T1000,608 L1000,668 Q810,690 640,678 T300,690 T40,668 Z"
+          fill="#3CABB4"/>
+    <path d="M60,668 Q260,692 440,678 T800,684 T998,666" fill="none" stroke="#A9DCE3" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- frozen lake (risk: cracks only in the upper part, clear text-free wordmark below) -->
+    <rect x="20" y="686" width="984" height="318" fill="#013058"/>
+
+    <!-- ice cracks: upper ice field only, converging to the horizon for perspective -->
+    <g fill="none" stroke="#FDFDFD" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke-width="12">
+        <path d="M512,698 L86,752"/>
+        <path d="M512,698 L938,752"/>
+      </g>
+      <g stroke-width="10">
+        <path d="M86,752 L196,722 L330,710"/>
+        <path d="M330,710 L462,706 L512,698"/>
+        <path d="M604,706 L512,698"/>
+        <path d="M604,706 L730,714 L828,730 L938,752"/>
+        <path d="M64,800 L186,776 L330,710"/>
+        <path d="M186,776 L302,806 L420,786"/>
+        <path d="M420,786 L552,798 L672,782"/>
+        <path d="M672,782 L730,714"/>
+        <path d="M552,798 L672,782 L806,806 L936,816"/>
+      </g>
+    </g>
+
+    <!-- wordmark, on the clear lower part -->
+    <text x="512" y="886" text-anchor="middle" fill="#FDFDFD"
+          font-family="Arial, Helvetica, sans-serif" font-weight="800"
+          font-size="128" letter-spacing="4">IT CLUB</text>
+    <text x="512" y="972" text-anchor="middle" fill="#FDFDFD"
+          font-family="Arial, Helvetica, sans-serif" font-weight="700"
+          font-size="58" letter-spacing="16">IRKUTSK</text>
+  </g>
+</svg>

@@ -33,4 +33,4 @@ git push -u origin <branch>
 ## Ссылки
 
 - Сайт: <https://itclub-irk.ru>
-- Telegram-чат клуба: QR в `_other/itclub_irkutsk_qr.png`
+- Telegram-чат клуба: QR-код попросить у админов (файл не публикуется в репо)

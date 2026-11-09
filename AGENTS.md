@@ -10,7 +10,6 @@ git repos in `repos/`.
 ├── .git                     # root repo git@github.com:itclub-irk/itclub-meta.git (branch main)
 ├── .gitignore               # ignores /repos/*
 ├── AGENTS.md
-├── _other/                  # materials (logos, QR, video, chat export) — ignored, not tracked
 └── repos/                   # independent projects, its own .git in each, NOT tracked by the root
     ├── community/           # project of community rules (rules.md) + QR
     ├── itclub-irk.github.io/# Hugo (PaperMod) website of the club https://itclub-irk.ru
@@ -22,11 +21,12 @@ git repos in `repos/`.
 
 - **Each dir in `repos/` is a separate git repo.** `cd` into it; commits/pushes are done there.
   Do not commit `repos/*` into the root repo — the root tracks only `README.md`, `AGENTS.md`
-  (and `.gitignore`); `_other/` is ignored.
+  (and `.gitignore`); materials live outside git.
 - Remote of the root repo — `git@github.com:itclub-irk/itclub-meta.git`
   (itclub-meta, branch `main`).
 - READMEs of `itclub_chat_bot` and `microfest` have `?TBD?` — documentation not written.
-- Max markdown line length — 100 chars (`MD013` in `.markdownlint.json`); keep lines shorter.
+- Markdown: max line length — 100 chars in all `.md` files of the workspace *and* its repos
+  (`MD013` in `.markdownlint.json`); keep lines shorter.
 - Table separators use the spaced style `| --- | --- |`, matching the header row (`MD060`).
 - There is `.env` in `itclub_chat_bot` with `TELEGRAM_APIKEY` — do not read, print,
   or commit its value.
