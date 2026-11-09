@@ -1,18 +1,15 @@
 # IT Club Irkutsk
 
-Метарепозиторий (репозиторий `itclub-irk/itclub-meta`) с общими материалами и проектами IT-клуба (Иркутск):
+Метарепозиторий (репозиторий `itclub-irk/itclub-meta`) с общими материалами и проектами
+IT-клуба (Иркутск):
 
 ## Состав
 
-Корневой репозиторий (`itclub-irk/itclub-meta`) содержит:
-
-- `_other/` — общие материалы: логотипы, QR-код, видео, экспорт чата Telegram.
-- `AGENTS.md` — инструкции для AI-агентов по работе с этим воркспейсом.
-
-Сами проекты — **независимые git-репозитории** и живут в `repos/` (в корень не включаются, см. `.gitignore`):
+Сами проекты — **независимые git-репозитории** и живут в `repos/`
+(в корень не включаются, см. `.gitignore`):
 
 | Репозиторий | Что это |
-|---|---|
+| --- | --- |
 | [`itclub-irk.github.io`](https://github.com/itclub-irk/itclub-irk.github.io) | Сайт клуба [itclub-irk.ru](https://itclub-irk.ru) — Hugo (тема PaperMod) |
 | [`itclub_chat_bot`](https://github.com/itclub-irk/itclub_chat_bot) | Telegram-чат-бот клуба — Clojure (http-kit, mount, malli) |
 | [`community`](https://github.com/itclub-irk/community) | Проект правил сообщества (rules.md) + QR-код |
