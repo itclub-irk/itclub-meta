@@ -6,10 +6,10 @@ Workspace `~/itclub` is **not** a mono-repo: it is a meta-repository with indepe
 
 ```
 /home/maxp/itclub
-├── .git                     # root repo git@github.com:itclub-irk/meta-root.git (branch main)
+├── .git                     # root repo git@github.com:itclub-irk/itclub-meta.git (branch main)
 ├── .gitignore               # ignores /repos/*
 ├── AGENTS.md
-├── _other/                  # shared materials (logos, QR, video, chat export) — tracked in the root repo
+├── _other/                  # shared materials (logos, QR, video, chat export) — ignored, not tracked
 └── repos/                   # independent projects, its own .git in each, NOT tracked by the root
     ├── community/           # project of community rules (rules.md) + QR
     ├── itclub-irk.github.io/# Hugo (PaperMod) website of the club https://itclub-irk.ru
@@ -20,8 +20,8 @@ Workspace `~/itclub` is **not** a mono-repo: it is a meta-repository with indepe
 ## Key rules
 
 - **Each dir in `repos/` is a separate git repo.** `cd` into it; commits/pushes are done there.
-  Do not commit `repos/*` into the root repo — the root tracks only `_other/`, `README.md`, `AGENTS.md`.
-- Remote of the root repo — `git@github.com:itclub-irk/meta-root.git` (origin, branch `main`).
+  Do not commit `repos/*` into the root repo — the root tracks only `README.md`, `AGENTS.md` (and `.gitignore`); `_other/` is ignored.
+- Remote of the root repo — `git@github.com:itclub-irk/itclub-meta.git` (itclub-meta, branch `main`).
 - READMEs of `itclub_chat_bot` and `microfest` have `?TBD?` — documentation not written.
 - There is `.env` in `itclub_chat_bot` with `TELEGRAM_APIKEY` — do not read, print, or commit its value.
 
